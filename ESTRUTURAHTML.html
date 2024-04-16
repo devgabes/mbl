@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Silva</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>
+                Everything Matters!
+            </h3>
+        </div>
+        <img src="/Gabe/img/gabriel.png">
+        <h1>
+            GABRIEL SILVA
+        </h1>
+        <h2>
+            DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024
+        </h2>
+    </header>
+    <nav>
+        <img src="/Gabe/img/menu.svg" onclick="toggleSpan('menuNav')">
+    <span class="hidden" id="menuNav">
+        <button onclick="showOnlyOne('spanHtml')">HTML</button>
+        <button onclick="showOnlyOne('spanCss')">CSS</button>
+        <button onclick="showOnlyOne('spanJs')">JAVASCRIPT</button>
+    </span>    
+    </nav>
+    <span id="spanHtml" class="hidden">
+        <a href="ESTRUTURAHTML.html"><button>ESTRUTURA DO HTML</button></a>
+
+    </span>
+    <span id="spanCss" class="hidden">
+        <a href="ESTILOS.html"> <button>FOLHAS DE ESTILO</button></a>
+
+    </span>
+    <span id="spanJs" class="hidden">
+        <a href="JAVA.html"><button>CRISE DE ANSIEDADE!</button></a>
+
+    </span>
+    <main>
+        <h2>ESTRUTURA DO HTML:</h2>
+        <p>HTML não é uma linguagem de programação; é uma linguagem de <b>marcação</b>, usada para definir a estrutura do seu conteúdo. HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira. As tags anexas podem transformar uma palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante.</p>
+        <p>As principais partes de um elemento são:
+            <li><b>TAG DE ABERTURA:</b> Consiste no nome do elemento envolvido em parênteses angulades de abertura e fechamento. Isso demostra onde o elemento começa ou onde seu efeito inicia.</li>
+            <li><b>TAG DE FECHAMENTO:</b> Inclui uma barra antes do nome do elemento, demonstra onde ele acaba.</li>
+            <li><b>CONTEÚDO:</b> O conteúdo do elemento.</li>
+            <li><b>ELEMENTO: A tag de abertura, fechamento e o conteúdo formam o elemento.</b></li>
+        </p>
+        <p>
+            Elementos podem ter atributos, eles contém informações extra sobre o elemento que você não quer que apareça no conteúdo real. Por exemplo: <code>&lt;class="hidden"&gt;</code> class é o nome do atributo e hidden é o valor do atributo. Class permite que você forneça ao elemento um identificador que possa ser usado posteriormente para aplicar ao elemento informações de estilo e outras coisas.<br>
+            Um atributo sempre deve ter:
+            <li>1. Um espaço entre ele e o nome do elemento (ou atributo anterior, se o elemento já tiver um).</li>
+            <li>2. O nome do atributo, seguido por um sinal de igual e aspas de abertura e fechamento, envolvendo o valor do atributo.</li>
+        </p>
+        <h2>ANATOMIA DO HTML:</h2>
+        <p><code>&lt;!DOCTYPE html&gt;</code> — Declara o tipo de documento como HTML5.<br>
+        <code>&lt;html&gt;&lt;/html&gt;</code> — Marca o início do documento HTML.<br>
+        <code>&lt;head&gt;&lt;/head&gt;</code> — Contém informações sobre o documento, como metadados e links para arquivos externos.<br>
+        <code>&lt;meta charset="utf-8"&gt;&lt;/meta&gt;</code> — Define o conjunto de caracteres usado no documento como UTF-8, que suporta uma ampla gama de caracteres.<br>
+        <code>&lt;title&gt;&lt;/title&gt;</code> — Define o título da página, exibido na barra de título do navegador.<br>
+        <code>&lt;body&gt;&lt;/body&gt;</code> — Contém o conteúdo visível da página.</p>
+        <h2>BODY: ESTRUTURAÇÃO:</h2>
+        <p style="text-align: center; background-color: rgba(213, 255, 255, 0.5); border-radius: 30%; ">
+            Cabeçalho: <code>&lt;header&gt;</code>.<br>
+            Barra de navegação: <code>&lt;nav&gt;</code>.<br>
+            Conteúdo principal: <code>&lt;main&gt;</code>, com várias subseções de conteúdo representadas por
+            <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, e elementos <code>&lt;div&gt;</code>.<br>
+            Rodapé: <code>&lt;footer&gt;</code>.
+        </p>
+        <p>
+            <li><code>&lt;main&gt;</code>: </li> é para o conteúdo único dessa página. Use <code>&lt;main&gt;</code>
+            apenas uma vez por página, e o coloca diretamente dentro do <code>&lt;body&gt;</code>. Não é ideal aninhar
+            ele dentro de qualquer outro elemento senão o elemento <code>&lt;body&gt;</code>.
+            <li><code>&lt;article&gt;</code>: </li> inclui um bloco de conteúdo relacionado o qual faz sentido por si
+            só, sem o restante da página (por exemplo, uma postagem singular dum blog).
+            <li><code>&lt;section&gt;</code>: </li> é similar com <code>&lt;article&gt;</code>, mas ele é mais para
+            agrupar uma única parte de página que constitui em um único pedaço de funcionalidade (por exemplo, um
+            minimapa, ou um conjunto de manchetes e resumo). É considerado boa prática começar cada seção com um título;
+            observe também que você pode dividir um <code>&lt;article&gt;</code>s em diferentes
+            <code>&lt;section&gt;</code>s, ou <code>&lt;section&gt;</code>s em diferentes <code>&lt;article&gt;</code>s,
+            dependendo do contexto.
+            <li><code>&lt;aside&gt;</code>: </li> é para conteúdo que não está relacionados diretamente com os conteúdos
+            principais, mas que podem providenciar informações complementares a esses (entradas de glossários, biografia
+            do autor, links relacionados, etc.).
+            <li><code>&lt;header&gt;</code>: </li> representa um grupo de conteúdo introdutório. Se ele for um elemento
+            filho do <code>&lt;body&gt;</code>, Ele é um header global da página do site, mas se for um elemento filho
+            de um <code>&lt;article&gt;</code> ou <code>&lt;section&gt;</code>, é definido como um header específico
+            para essa seção (tenta não confundir isso com títulos e cabeçalhos).
+            <li><code>&lt;nav&gt;</code>: </li> contém a funcionalidade principal de navegação da página. Links
+            secundários, etc., não iria na navegação.
+            <li><code>&lt;footer&gt;</code>: </li> representa um grupo de conteúdo final da página.
+        </p>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="/Gabe/img/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="/Gabe/img/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
+    <script>
+        function toggleSpan(menuNav) {
+            var element = document.getElementById(menuNav);
+            if (element.classList.contains("hidden")) {
+                element.classList.remove("hidden");
+            } else {
+                element.classList.add("hidden");
+            }
+        }
+        function showOnlyOne(id) {
+            var elements = ['spanHtml', 'spanCss', 'spanJs'];
+
+            for (var i = 0; i < elements.length; i++) {
+                var element = document.getElementById(elements[i]);
+                if (element) {
+                    if (elements[i] === id) {
+                        if (element.classList.contains("hidden")) {
+                            element.classList.remove("hidden");
+                        } else {
+                            element.classList.add("hidden");
+                        }
+                    } else {
+                        element.classList.add("hidden");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

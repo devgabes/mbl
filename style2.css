@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d5ffff;
+    background-color: #5dc1b9;
 }
 
 header { /* 004e89 c7f9cc */
@@ -39,7 +39,7 @@ header { /* 004e89 c7f9cc */
 }
 
 nav{
-    background-color: #5dc1b9;
+    background-color: #d5ffff;
     color: black;
     display: flex;
     padding: 7px;
@@ -54,7 +54,7 @@ nav{
         padding: 0;
         
     }
-
+    
     img {
         cursor: pointer;
         width: 30px;
@@ -79,6 +79,10 @@ nav{
 
 }
 
+li {
+    list-style: none;
+}
+
 span#spanHtml, 
 span#spanCss, 
 span#spanJs {
@@ -95,40 +99,27 @@ span#spanJs {
         margin: 3px;
         font-size: 100%;
         font-weight: bold;
-        color: #5dc1b9;
+        color: #d5ffff;
 
     }
 }
-
 
 main {
     padding: 5px;
     padding-bottom: 10vh;
     h2{
         margin-top: 0;
+        margin-bottom: 1vh;
     }
-    blockquote {
-        background-color: rgba(93, 193, 185, 0.4);
-        border: 1px solid;
-        border-radius: 1%;
-        font-style: italic;
-        padding-left: 3%;
-        padding-right: 3%;
-        margin-left: 3%;
-        margin-right: 20%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border-left: 5px solid #005954; ;
-        text-align: left;      
-        font-size: 100%;
-        text-indent: 1em;
+    p {
+        margin-top: 0;
     }
 }
 .hidden{
     display: none;
 }
 footer {
-    background-color: #5dc1b9; /* cornflowerblue */
+    background-color: #d5ffff; /* cornflowerblue */
     text-align: center;
     padding:0;
     display: flex;

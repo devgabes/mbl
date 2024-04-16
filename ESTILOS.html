@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Silva</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>
+                Everything Matters!
+            </h3>
+        </div>
+        <img src="/Gabe/img/gabriel.png">
+        <h1>
+            GABRIEL SILVA
+        </h1>
+        <h2>
+            DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024
+        </h2>
+    </header>
+    <nav>
+        <img src="/Gabe/img/menu.svg" onclick="toggleSpan('menuNav')">
+    <span class="hidden" id="menuNav">
+        <button onclick="showOnlyOne('spanHtml')">HTML</button>
+        <button onclick="showOnlyOne('spanCss')">CSS</button>
+        <button onclick="showOnlyOne('spanJs')">JAVASCRIPT</button>
+    </span>    
+    </nav>
+    <span id="spanHtml" class="hidden">
+        <a href="ESTRUTURAHTML.html"><button>ESTRUTURA DO HTML</button></a>
+
+    </span>
+    <span id="spanCss" class="hidden">
+        <a href="ESTILOS.html"> <button>FOLHAS DE ESTILO</button></a>
+
+    </span>
+    <span id="spanJs" class="hidden">
+        <a href="JAVA.html"><button>CRISE DE ANSIEDADE!</button></a>
+
+    </span>
+    <main>
+        <h2>CSS - FOLHAS DE ESTILOS:</h2>
+        <p>O CSS permite aplicar estilos seletivamente em documentos HTML. Por exemplo: para selecionar todos os elementos de parágrafos de uma página HTML e tornar o texto dentro deles vermelho: <img src="/Gabe/img/code p red.png" style="width: 100%; border-radius: 5%;">
+        Toda essa estrutura é chamada de CONJUNTO DE REGRAS.
+        <li><b>SELECTOR:</b> Nome do elemento HTML <code>&lt;p&gt;</code></li>
+        <li><b>DECLARATION:</b> Uma regra como <code>color: red;</code> especificando quais das propriedades do elemento você quer estilizar.</li>
+        <li><b>PROPERTY:</b> Forma pela qual você estiliza (no caso, <b>color</b>)</li>
+        <li><b>PROPERTY VALUE:</b> O valor da propriedade. No caso, <b>red</b>.</li>
+        <h3>IMPORTANTE:</h3>
+        <li>1. CADA LINHA DEVE SER ENVOLVIDA EM CHAVES <code>&lt;{}&gt;</code></li>
+        <li>2. DENTRO DE CADA DECLARAÇÃO, VOCÊ DEVE USAR DOIS PONTOS PARA SEPARAR A PROPRIEDADE DOS VALORES.</li>
+        <li>3. DENTRO DE CADA CONJUNTO DE REGRAS, VOCÊ DEVE USAR UM PONTO E VÍRGULA PARA SEPARAR CADA DECLARAÇÃO DA PRÓXIMA.</li>        
+        </p>
+        <h2>MÚLTIPLOS ELEMENTOS:</h2>
+        <p>Você também pode selecionar vários tipos de elementos e aplicar um único conjunto de regras a todos eles. Inclua múltiplos seletores separados por vírgulas. 
+        <img src="/Gabe/img/multiplos.png" style="width: 100%; border-radius: 5%;">
+        </p>
+        <h2>DIFERENTES TIPOS DE SELETORES:</h2>
+        <p>
+            <li><b>SELETOR DE ELEMENTO (tag):</b> Todos os elementos HTML de determinado tipo.<br>
+            <code>p</code> seleciona <code>&lt;p&gt;</code></li><br>
+            <li><b>SELETOR DE ID:</b> O elemento na página com o ID especificado. É uma boa prática usar um elemento por ID (e claro, um ID por elemento) mesmo que seja permitido usar o mesmo ID para vários elementos.<br>
+            code>#id</code> seleciona <code>&lt;p id="id"&gt;</code></li> <br>
+            <li><b>SELETOR DE CLASSE:</b> Os elementos na página com a classe especificada (várias instâncias de classe podem aparecer em uma página).<br>
+            <code>.classe</code> seleciona <code>&lt;p class="classe"&gt;</code></li><br>
+            <li><b>SELETOR DE ATRIBUTO:</b> Os elementos na página com o atributo especificado.<br>
+            <code>img[src]</code> seleciona <code>&lt;img src="imagem.png"&gt;</code> mas não seleciona <code>&lt;img&gt;</code></li><br>
+            <li><b>SELETOR DE PSEUDO-CLASSE:</b>Os elementos especificados, mas somente quando estiver no estado especificado.<br> Exemplo: com o mouse sobre ele.<br>
+            <code>a:hover</code> seleciona <code>&lt;a&gt;</code> somente quando estiver com o mouse sobre ele.</li>
+        </p>
+        <h2>CAIXAS:</h2>
+        <p>Muitos dos elementos HTML podem ser pensados como caixas umas em cima das outras. O layout CSS é baseado principalmente no modelo de caixas. Cada um dos blocks que ocupam espaço na página tem propriedades como essas:
+            <li><code>padding</code> espaço ao redor do conteúdo.</li>
+            <li><code>border</code> linha do lado de fora do padding.</li>
+            <li><code>margin</code> espaço externo a um elemento.</li>
+            <li><code>width</code> largura do elemento.</li>
+            <li><code>height</code> altura do elemento.</li>
+            <li><code>background-color</code> cor de fundo.</li>
+            <li><code>color</code> cor do conteúdo (geralmente texto).</li>
+        </p>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="/Gabe/img/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="/Gabe/img/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
+    <script>
+        function toggleSpan(menuNav) {
+            var element = document.getElementById(menuNav);
+            if (element.classList.contains("hidden")) {
+                element.classList.remove("hidden");
+            } else {
+                element.classList.add("hidden");
+            }
+        }
+        function showOnlyOne(id) {
+            var elements = ['spanHtml', 'spanCss', 'spanJs'];
+
+            for (var i = 0; i < elements.length; i++) {
+                var element = document.getElementById(elements[i]);
+                if (element) {
+                    if (elements[i] === id) {
+                        if (element.classList.contains("hidden")) {
+                            element.classList.remove("hidden");
+                        } else {
+                            element.classList.add("hidden");
+                        }
+                    } else {
+                        element.classList.add("hidden");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Silva</title>
+    <link rel="stylesheet" href="style4.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                font-size: 24px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>
+                Everything Matters!
+            </h3>
+        </div>
+        <img src="/Gabe/img/gabriel.png">
+        <h1>
+            GABRIEL SILVA
+        </h1>
+        <h2>
+            DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024
+        </h2>
+    </header>
+    <nav>
+        <img src="/Gabe/img/menu.svg" onclick="toggleSpan('menuNav')">
+    <span class="hidden" id="menuNav">
+        <button onclick="showOnlyOne('spanHtml')">HTML</button>
+        <button onclick="showOnlyOne('spanCss')">CSS</button>
+        <button onclick="showOnlyOne('spanJs')">JAVASCRIPT</button>
+    </span>    
+    </nav>
+    <span id="spanHtml" class="hidden">
+        <a href="ESTRUTURAHTML.html"><button>ESTRUTURA DO HTML</button></a>
+
+    </span>
+    <span id="spanCss" class="hidden">
+        <a href="ESTILOS.html"> <button>FOLHAS DE ESTILO</button></a>
+
+    </span>
+    <span id="spanJs" class="hidden">
+        <a href="JAVA.html"><button>CRISE DE ANSIEDADE!</button></a>
+
+    </span>
+    <main>
+        <h2>IMEDIATAMENTE TENHO CRISE DE ANSIEDADE!</h2>
+        <p>Alguns dos principais recursos da linguagem, para entender melhor como o JavaScript funciona. 
+        <h2>VARIÁVEIS:</h2>
+        <p>São conteiners que armazenam valores. Você começa declarando uma variável com a palavra-chave <b>let</b>, seguida pelo nome que você dá variável.<br>
+        <code>let myVariable;</code><br>
+        Um ponto e vírgula no final de uma linha indica onde uma instrução termina. Só é necessário quando você precisa separar instruções em uma única linha. No entanto, algumas pessoas acreditam que é uma boa prática colocar ponto-e-vírgula no final de cada instrução.<br><br>
+        Você pode nomear uma variável para praticamente qualquer coisa, mas há algumas restrições. <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types#variables" style="color:#005954; font-weight: bold;" target="_blank">REGRAS SOBRE NOMENCLATURA</a></p>
+        <p>O  JavaScript diferencia maíuscula de minúscula. Isso significa que <b>myVariable</b> não é o mesmo que <b>myvariable</b>.</p>
+        <p>Depois de declarar uma variável, você pode atribuir um valor:<br>
+        <code>myVariable = "bob";</code><br>
+        Além disso, você pode fazer as duas operações na mesma linha:<br>
+        <code>let myVariable = "bob";</code><br>
+        Você recupera o valor chamando o nome da variável:<br>
+        <code>myVariable;</code><br>
+        Depois de atribuir um valor, você pode alterá-lo posteriormente no código:<br>
+        <code>myVariable = "bob";<br>
+        myVariable = "bill";</code></p>
+        <p>Observe que as variáveis podem conter valores que tem diferentes tipos de dados:
+        <li><b>STRING:</b> Essa é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.<br>
+        <code>let myVariable = 'bob';</code>
+        <br><br>
+        <b>NUMBER:</b> Um número. Números não têm aspas.<br>
+        <code>let myVariable = 1;</code>
+        <br><br>
+        <b>BOOLEAN:</b> Um valor que é <b>true</b> ou <b>false</b>. <br>
+        <code>let myVariable = true;</code>
+        <br><br>
+        <b>ARRAY:</b> Permite armazenar vários valores em uma única referência. <br> 
+        <code>let myVariable = [1, 'bob', 'bill', 10];</code> Refere-se a cada membro do array assim: <code>myVariable[0]</code>, <code>myVariable[1]</code>, etc.
+        <br><br>
+        <b>OBJECT:</b> Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente!<br>
+        <code>let myVariable = document.querySelector('h1');</code> todos os exemplos acima também.
+        </li></p>
+        <h2>OPERADORES:</h2>
+        <p>Um símbolo matemático que produz um resultado baseado em dois valores ou variáveis. Exemplo:
+            <li><b>ADIÇÃO:</b></li> Adicione dois números ou combine duas strings. (símbolo +)<br>
+            <code>1 + 1;</code><br>
+            <code>'bob' + 'bill';</code><br><br>
+            <li><b>SUBTRAÇÃO, MULTIPLICAÇÃO E DIVISÃO:</b></li> Eles fazem o que você espera que façam em matemática básica. (símbolos -, *, /)<br>
+            <code>1 - 1;</code><br>
+            <code>1 * 1;</code><br>
+            <code>1 / 1;</code><br><br>
+            <li><b>ATRIBUIÇÃO:</b></li> Atribui valor a uma variável. (símbolo =)<br>
+            <code>let myVariable = 1;</code><br><br>
+            <li><b>IGUALDADE DE ESCRITA:</b></li> Executa um teste para ver se dois valores são iguais. Retorna um resultado <i>true</i> ou <i>false</i> (booleano). (símbolo ===)<br>
+            <code>let myVariable = 1;</code><br><code>myVariable === 1;</code><br><br>
+            <li><b>NÃO, NÃO É IGUAL:</b></li> Retorna o valor logicamente oposto do que precede. Acontece um <i>true</i> em um <i>false</i>, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois valores <b>não</b> são iguais. (símbolo !, !==)<br>
+            Para "not" a expressão básica é "true", mas o comparação retorna "false" porque nós a negamos:<br>
+            <code>let myVariable = 1;</code><br><code>!(myVariable === 1);</code><br>
+            "Não é igual" dá basicamente o mesmo resultado com diferentes sintaxes. Aqui estamos testando: "é <code>myVariable</code> NÃO igual a 3". Isso retorna <i>false</i> porque <code>myVariable</code> É igual a 3:<br>
+            <code>let myVariable = 3;</code><br><code>myVariable !== 3;</code><br><br>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators" style="color:#005954; font-weight: bold;" target="_blank">EXPRESSÕES E OPERADORES</a>
+        </p>
+        <h2>CONDICIONAIS:</h2>
+        <p>Estruturas usadas para testar se uma expressão retorna verdadeira ou não. Uma forma comum de condicional é a instrução: <code>if...else</code>. Exemplo:
+            <img src="/Gabe/img/icecream.png" style="width: 100%;">
+        A expressão dentro do <code>if ()</code> é o teste. Usa o operador de igualdade de escrita para comparar a variável iceCream com a string chocolate para ver se as duas são iguais. Se retornar true, o primeiro bloco será executado. Se for false, o segundo bloco (else) será executado.</p>
+        <h2>FUNÇÕES>:</h2>
+        Functions são uma forma de empacotar a funcionalidade que você deseja reutilizar. 
+            <img src="/Gabe/img/function.png" style="width: 100%;">
+        <h2>EVENTOS:</h2>
+        <p>Essas são estruturas de código que detectam atividades no navegador e executam o código em resposta. O exemplo mais óbvio é lidar com o evento de click, que é acionado pelo navegador quando você clica em algo com o mouse.
+            <img src="/Gabe/img/click.png" style="width: 100%;"> 
+        Existem várias maneiras de anexar um manipulador de eventos a um elemento. Aqui selecionamos <code>&lt;html&gt;</code> em seguida sua função <code>addEventListener()</code>, passando o nome do evento <code>('click')</code> e uma função para executar quando acontecer.</p>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="/Gabe/img/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="/Gabe/img/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
+    <script>
+        function toggleSpan(menuNav) {
+            var element = document.getElementById(menuNav);
+            if (element.classList.contains("hidden")) {
+                element.classList.remove("hidden");
+            } else {
+                element.classList.add("hidden");
+            }
+        }
+        function showOnlyOne(id) {
+            var elements = ['spanHtml', 'spanCss', 'spanJs'];
+
+            for (var i = 0; i < elements.length; i++) {
+                var element = document.getElementById(elements[i]);
+                if (element) {
+                    if (elements[i] === id) {
+                        if (element.classList.contains("hidden")) {
+                            element.classList.remove("hidden");
+                        } else {
+                            element.classList.add("hidden");
+                        }
+                    } else {
+                        element.classList.add("hidden");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
