@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Silva | DESENV.WEB </title>
+    <title>Gabriel Silva</title>
     <link rel="stylesheet" href="style.css">
     <style>
         @media screen and (max-width: 768px){
@@ -17,6 +18,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div>
@@ -24,78 +26,116 @@
                 Everything Matters!
             </h3>
         </div>
-            <img src="img/gabriel.png">
-            <h1>
-                GABRIEL SILVA
-            </h1>
-            <h2>
-                DESENV. WEB HTML + CSS + JAVASCRIPT<br>
-                UNIVERSIDADE ESTÁCIO DE SÁ - 2024
-            </h2>
+        <img src="/Gabe/img/gabriel.png">
+        <h1>
+            GABRIEL SILVA
+        </h1>
+        <h2>
+            DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024
+        </h2>
     </header>
     <nav>
-        <button onclick="toggleSection('html')" class="nav">HTML</button>
-
-        <button onclick="toggleSection('css')" class="nav">CSS</button>
-        <button onclick="toggleSection('js')" class="nav">JavaScript</button>
+        <img src="/Gabe/img/menu.svg" onclick="toggleSpan('menuNav')">
+    <span class="hidden" id="menuNav">
+        <button onclick="showOnlyOne('spanHtml')">HTML</button>
+        <button onclick="showOnlyOne('spanCss')">CSS</button>
+        <button onclick="showOnlyOne('spanJs')">JAVASCRIPT</button>
+    </span>    
     </nav>
-    <section>
-        <section id="html" class="hidden">
-            <button>ELEMENTOS</button>
-            <button>ATRIBUTOS</button>
-            <button>ATRIBUTOS GLOBAIS</button>
-            <button>TIPOS DE LINK</button>
-            <button>CATEGORIAS DE CONTEÚDO</button>
-        </section>
-        <section id="css" class="hidden">
-            <button>css</button>
-            <button>css</button>
-            <button>css</button>
-            <button>css</button>
-            <button>css</button>
-        </section>
-        <section id="js" class="hidden">
-            <button>js</button>
-            <button>js</button>
-            <button>js</button>
-            <button>js</button>
-            <button>js</button>
-        </section>
-    </section>
+    <span id="spanHtml" class="hidden">
+        <button>ELEMENTOS</button>
+        <button>ATRIBUTOS</button>
+        <button>ATRIBUTOS GLOBAIS</button>
+        <button>TIPOS DE LINK</button>
+        <button>CATEGORIAS DE CONTEÚDO</button>
+    </span>
+    <span id="spanCss" class="hidden">
+        <button>css</button>
+        <button>css</button>
+        <button>css</button>
+        <button>css</button>
+        <button>css</button>
+    </span>
+    <span id="spanJs" class="hidden">
+        <button>js</button>
+        <button>js</button>
+        <button>js</button>
+        <button>js</button>
+        <button>js</button>
+    </span>
     <main>
         <h2>
             SOBRE MIM:
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+            Em 2024, decidi ampliar meus horizontes e comecei a estudar <b>Análise e Desenvolvimento de Sistemas.</b>
+            Trabalho em uma farmácia de manipulação especializada em cosmética médica, o que me permite estar sempre em
+            contato com inovações e cuidados personalizados que fazem a diferença no dia a dia das pessoas.
         </p>
+        <p>
+            Sou uma pessoa espontânea e divertida, que acredita e quer aproveitar a vida ao máximo. Este site é um
+            reflexo do meu compromisso com o aprendizado contínuo e uma vitrine para os projetos que estou desenvolvendo
+            enquanto aprimoro minhas habilidades de programação.
+        </p>
+        <p>
+            Embora ainda esteja explorando o que mais quero adicionar aqui, uma coisa é certa: estou em uma jornada
+            contínua de aprendizado e crescimento, tanto pessoal quanto profissionalmente.
+        </p>
+
+        <blockquote>
+            <p>
+            Veja que pena essa moça bonita que ainda acredita que sabe o que quer, calou-se acanhada num canto, parado num ponto, manteve perdido o olhar.
+            <p>
+            Pensa na vida, paixão infinita, que desde pequena sente por viver. Tem tanto querer, mas há de entender, tem tempo pra tudo, menina.
+        </blockquote>
+        <br>
         <h2>
             LOREM IPSUM
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
+            Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis,
+            felis ut adipiscing.
         </p>
+
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="img/LinkedIn.png">
-        <p>LINKEDIN</p></a>
-        <a href="wa.me/5521985358527"><img src="img/whatsapp.jpg">
-        <p>WHATSAPP</p></a>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="/Gabe/img/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="/Gabe/img/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
     </footer>
-    <script>
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-    
-            // Verifica se a seção está visível
-            if (!section.classList.contains("hidden")) {
-                // Se estiver visível, oculta a seção
-                section.classList.add("hidden");
-            } else {
-                // Se estiver oculta, mostra a seção
-                section.classList.remove("hidden");
+<script>
+    function toggleSpan(menuNav) {
+        var element = document.getElementById(menuNav);
+        if (element.classList.contains("hidden")) {
+            element.classList.remove("hidden");
+        } else {
+            element.classList.add("hidden");
+        }
+    }
+    function showOnlyOne(id) {
+        var elements = ['spanHtml', 'spanCss', 'spanJs'];
+
+        for (var i = 0; i < elements.length; i++) {
+            var element = document.getElementById(elements[i]);
+            if (element) {
+                if (elements[i] === id) {
+                    if (element.classList.contains("hidden")) {
+                        element.classList.remove("hidden");
+                    } else {
+                        element.classList.add("hidden");
+                    }
+                } else {
+                    element.classList.add("hidden");
+                }
             }
         }
-    </script>
-    
+    }
+</script>
 </body>
 </html>
