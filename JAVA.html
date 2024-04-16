@@ -27,7 +27,7 @@
                 Everything Matters!
             </h3>
         </div>
-        <img src="img/gabriel.png">
+        <a href="index.html" style="text-decoration: none; color: #5dc1b9;"><img src="img/gabriel.png"></a>
         <h1>
             GABRIEL SILVA
         </h1>
@@ -38,7 +38,7 @@
     </header>
     <nav>
         <img src="img/menu.svg" onclick="toggleSpan('menuNav')">
-    <span class="hidden" id="menuNav">
+    <span class="" id="menuNav">
         <button onclick="showOnlyOne('spanHtml')">HTML</button>
         <button onclick="showOnlyOne('spanCss')">CSS</button>
         <button onclick="showOnlyOne('spanJs')">JAVASCRIPT</button>
@@ -112,14 +112,14 @@
         </p>
         <h2>CONDICIONAIS:</h2>
         <p>Estruturas usadas para testar se uma expressão retorna verdadeira ou não. Uma forma comum de condicional é a instrução: <code>if...else</code>. Exemplo:
-            <img src="img/icecream.png" style="width: 100%;">
+            <img src="img/icecream.png" style="width: 100%; height: 20vh;">
         A expressão dentro do <code>if ()</code> é o teste. Usa o operador de igualdade de escrita para comparar a variável iceCream com a string chocolate para ver se as duas são iguais. Se retornar true, o primeiro bloco será executado. Se for false, o segundo bloco (else) será executado.</p>
-        <h2>FUNÇÕES>:</h2>
+        <h2>FUNÇÕES:</h2>
         Functions são uma forma de empacotar a funcionalidade que você deseja reutilizar. 
-            <img src="img/function.png" style="width: 100%;">
+            <img src="img/function.png" style="width: 100%; height: 20vh;">
         <h2>EVENTOS:</h2>
         <p>Essas são estruturas de código que detectam atividades no navegador e executam o código em resposta. O exemplo mais óbvio é lidar com o evento de click, que é acionado pelo navegador quando você clica em algo com o mouse.
-            <img src="img/click.png" style="width: 100%;"> 
+            <img src="img/click.png" style="width: 100%; height: 20vh;"> 
         Existem várias maneiras de anexar um manipulador de eventos a um elemento. Aqui selecionamos <code>&lt;html&gt;</code> em seguida sua função <code>addEventListener()</code>, passando o nome do evento <code>('click')</code> e uma função para executar quando acontecer.</p>
     </main>
     <footer>
@@ -131,14 +131,7 @@
         </a>
     </footer>
     <script>
-        function toggleSpan(menuNav) {
-            var element = document.getElementById(menuNav);
-            if (element.classList.contains("hidden")) {
-                element.classList.remove("hidden");
-            } else {
-                element.classList.add("hidden");
-            }
-        }
+
         function showOnlyOne(id) {
             var elements = ['spanHtml', 'spanCss', 'spanJs'];
 

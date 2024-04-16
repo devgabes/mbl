@@ -18,6 +18,7 @@ header { /* 004e89 c7f9cc */
     h3{
         margin: 0;
         padding-top: 2vh;
+        font-size: 100%;
     }
     img {
         margin: 2vh;
@@ -110,12 +111,12 @@ main {
     blockquote {
         background-color: rgba(93, 193, 185, 0.4);
         border: 1px solid;
-        border-radius: 1%;
+        border-radius: 2%;
         font-style: italic;
-        padding-left: 3%;
-        padding-right: 3%;
-        margin-left: 3%;
-        margin-right: 20%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
         padding-bottom: 0;
         margin-bottom: 0;
         border-left: 5px solid #005954; ;
